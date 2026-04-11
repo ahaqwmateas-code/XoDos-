@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version" />
+        <Spinner android:entries="@array/dxvk_version_entries" android:id="@id/SVersion" android:layout_width="fill_parent" style="@style/ComboBox" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frame_rate" />
+        <Spinner android:entries="@array/dxvk_framerate_entries" android:id="@id/SFramerate" android:layout_width="fill_parent" style="@style/ComboBox" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_device_memory" />
+        <Spinner android:entries="@array/dxvk_max_device_memory_entries" android:id="@id/SMaxDeviceMemory" android:layout_width="fill_parent" style="@style/ComboBox" />
+    </LinearLayout>
+</ScrollView>

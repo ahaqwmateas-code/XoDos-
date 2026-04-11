@@ -1,0 +1,22 @@
+name: xodos
+description: Xodos Pro - Ultimate Audio Translator & Dubbing Workstation
+version: 2.0.0+1
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  record: ^6.2.0
+  audioplayers: ^6.6.0
+  shared_preferences: ^2.2.2
+  permission_handler: ^12.0.1
+  path_provider: ^2.1.1
+  wakelock_plus: ^1.1.4
+  device_info_plus: ^12.4.0
+  connectivity_plus: ^7.1.0
+  uuid: ^4.0.0
+  clipboard: ^3.0.14
+  url_launcher: ^6.3.2
+flutter:
+  uses-material-design: true
+

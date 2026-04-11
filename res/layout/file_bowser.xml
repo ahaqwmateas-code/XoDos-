@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/file_browser_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="@color/white" android:id="@id/ESearchEditText" android:background="@drawable/item_file_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:hint="Search" android:inputType="text" android:imeOptions="actionDone" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

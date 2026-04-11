@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:textColor="#ffffffff" android:orientation="horizontal" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="#ffffffff"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:textColor="#ffffffff" android:orientation="vertical" android:background="#ff000000" android:padding="8.0dip" android:layout_width="430.0dip" android:layout_height="fill_parent" android:buttonTint="#ffffffff">
+        <LinearLayout android:textColor="#ffffffff" android:orientation="horizontal" android:id="@id/LLTableHead" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:buttonTint="#ffffffff">
+            <TextView android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="0.0dip" android:text="@string/process_name" android:layout_weight="1.0" style="@style/TableHeadBackground" />
+            <TextView android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="60.0dip" android:text="@string/pid" style="@style/TableHeadBackground" />
+            <TextView android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="110.0dip" android:text="@string/memory" style="@style/TableHeadBackground" />
+            <View android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="40.0dip" android:buttonTint="#ffffffff" style="@style/TableHeadBackground" />
+        </LinearLayout>
+        <FrameLayout android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="140.0dip" android:buttonTint="#ffffffff">
+            <ScrollView android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:buttonTint="#ffffffff">
+                <LinearLayout android:textColor="#ffffffff" android:orientation="vertical" android:id="@id/LLProcessList" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:buttonTint="#ffffffff" />
+            </ScrollView>
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/TVEmptyText" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_items_to_display" />
+        </FrameLayout>
+    </LinearLayout>
+    <ScrollView android:textColor="#ffffffff" android:background="#ff000000" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:buttonTint="#ffffffff">
+        <LinearLayout android:textColor="#ffffffff" android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:buttonTint="#ffffffff">
+            <LinearLayout android:textColor="#ffffffff" android:orientation="vertical" android:background="#ff000000" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:buttonTint="#ffffffff">
+                <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/TVCPUTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:textColor="#ffffffff" android:orientation="vertical" android:id="@id/LLCPUInfo" android:background="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="#ffffffff" />
+            </LinearLayout>
+            <LinearLayout android:textColor="#ffffffff" android:orientation="vertical" android:background="#ff000000" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:buttonTint="#ffffffff">
+                <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/TVMemoryTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="#ffffffff" android:id="@id/TVMemoryInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

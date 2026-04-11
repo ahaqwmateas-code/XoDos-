@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="0.0dip" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/top_row" android:background="#ff000000" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/primary_text_dark" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_widget" android:layout_weight="2.0" />
+        </LinearLayout>
+        <ListView android:id="@id/widget_list" android:background="@android:color/background_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/darker_gray" android:dividerHeight="1.0px" android:layout_below="@id/top_row" />
+        <TextView android:textColor="@android:color/black" android:id="@id/empty_view" android:background="@android:color/white" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/msg_refresh_widget_from_app" android:layout_below="@id/top_row" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/refresh_button" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@android:drawable/stat_notify_sync" android:layout_alignParentTop="true" android:contentDescription="@string/action_refresh" android:layout_alignParentEnd="true" style="?android:borderlessButtonStyle" />
+</RelativeLayout>

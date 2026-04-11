@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/FieldSet">
+                    <LinearLayout android:orientation="vertical" android:id="@id/LLInstalledWineList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <View style="@style/HorizontalLine" />
+                    <Button android:layout_gravity="center_horizontal" android:id="@id/BTSelectWineFile" android:layout_width="240.0dip" android:layout_height="wrap_content" android:text="@string/install_wine" style="@style/ButtonPositive" />
+                </LinearLayout>
+                <TextView android:textColor="#ffffffff" android:text="@string/installed_wine" android:buttonTint="#ffffffff" style="@style/FieldSetLabel" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/FieldSet">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/box86_version" />
+                    <Spinner android:textColor="#ffffffff" android:entries="@array/box86_version_entries" android:id="@id/SBox86Version" android:background="#aa000000" android:layout_width="fill_parent" android:buttonTint="#ffffffff" style="@style/ComboBox" />
+                    <TextView android:textColor="#ffffffff" android:background="#aa000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/box64_version" android:buttonTint="#ffffffff" />
+                    <Spinner android:textColor="#ffffffff" android:entries="@array/box64_version_entries" android:id="@id/SBox64Version" android:background="#aa000000" android:layout_width="fill_parent" android:buttonTint="#ffffffff" style="@style/ComboBox" />
+                    <TextView android:textColor="#ffffffff" android:background="#aa000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/box86_preset" android:buttonTint="#ffffffff" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Spinner android:textColor="#ffffffff" android:id="@id/SBox86Preset" android:background="#aa000000" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:buttonTint="#ffffffff" style="@style/ComboBox" />
+                        <ImageButton android:id="@id/BTAddBox86Preset" android:src="@drawable/icon_add" style="@style/ListMenuButton" />
+                        <ImageButton android:id="@id/BTEditBox86Preset" android:src="@drawable/icon_edit" style="@style/ListMenuButton" />
+                        <ImageButton android:id="@id/BTDuplicateBox86Preset" android:src="@drawable/icon_duplicate" style="@style/ListMenuButton" />
+                        <ImageButton android:id="@id/BTRemoveBox86Preset" android:layout_marginRight="0.0dip" android:src="@drawable/icon_remove" style="@style/ListMenuButton" />
+                    </LinearLayout>
+                    <TextView android:textColor="#ffffffff" android:background="#aa000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/box64_preset" android:buttonTint="#ffffffff" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Spinner android:textColor="#ffffffff" android:id="@id/SBox64Preset" android:background="#aa000000" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:buttonTint="#ffffffff" style="@style/ComboBox" />
+                        <ImageButton android:id="@id/BTAddBox64Preset" android:src="@drawable/icon_add" style="@style/ListMenuButton" />
+                        <ImageButton android:id="@id/BTEditBox64Preset" android:src="@drawable/icon_edit" style="@style/ListMenuButton" />
+                        <ImageButton android:id="@id/BTDuplicateBox64Preset" android:src="@drawable/icon_duplicate" style="@style/ListMenuButton" />
+                        <ImageButton android:id="@id/BTRemoveBox64Preset" android:layout_marginRight="0.0dip" android:src="@drawable/icon_remove" style="@style/ListMenuButton" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:text="@string/box86_box64" style="@style/FieldSetLabel" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/FieldSet">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cursor_speed" android:layout_weight="1.0" />
+                        <TextView android:id="@id/TVCursorSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <SeekBar android:id="@id/SBCursorSpeed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="200" />
+                    <CheckBox android:id="@id/CBUseDRI3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/use_dri3_extension" />
+                </LinearLayout>
+                <TextView android:text="@string/xserver" style="@style/FieldSetLabel" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center|right" android:id="@id/BTConfirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:src="@drawable/icon_confirm" android:tint="#ffffffff" />
+</FrameLayout>

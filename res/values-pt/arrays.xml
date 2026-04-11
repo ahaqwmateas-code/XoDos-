@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="core_options">
+        <item>1 cœur</item>
+        <item>2 cœurs</item>
+        <item>3 cœurs</item>
+        <item>4 cœurs</item>
+        <item>5 cœurs</item>
+        <item>6 cœurs</item>
+        <item>7 cœurs</item>
+        <item>8 cœurs</item>
+    </string-array>
+    <string-array name="tutorial_steps">
+        <item>XoDos🖥️: es un escritorio Linux nativo rápido para Android</item>
+        <item>Proot🐧: Ejecuta distribuciones Linux completas con acceso root</item>
+        <item>Kali🐉Linux: Kit de pruebas con más de 100 herramientas</item>
+        <item>Wine🍷Glibc: Emulación de Windows para la mayoría (si no es Snapdragon, usa VirGl)</item>
+        <item>Wine🍷Bionic: Emulación con controladores nativos (usa wrapper si no es Snapdragon)</item>
+        <item>Excluir 🗑️ prefixo do Wine🍷: Aqui você pode remover/excluir o contenedor do Wine ou o prefixo instalado para corrigir problemas do sistema Windows e instalar Wine novo</item>
+        <item>Gerenciador de arquivos📁: navegue e gerencie arquivos, extraia, instale, restaure e mais</item>
+        <item>Termux:widgets📃: crie atalhos diretamente na Tela Inicial do Android para executar scripts/aplicativos mais fácil e rapidamente</item>
+        <item>Termux:widgets: make shortcuts directly to android launcher to make running scripts easier</item>
+        <item>Configuración⚙️: Configura versiones de Wine/DXVK y drivers</item>
+        <item>AI🤖Chat: IA local privada compatible con DeepSeek, Llama, etc.</item>
+        <item>Restaurar♻️: Instala actualizaciones y sistemas como Kali/Proot</item>
+        <item>Respaldo📥: Copia total del sistema para compartir/restaurar</item>
+        <item>Configuración rápida🪄: Facilita Wine para nuevos usuarios</item>
+        <item>atalhos🎮: ajuda a configurar aplicativos e jogos do Wine/Windows e abri-los diretamente</item>
+        <item>Cambiar👥: Cambia entre contenedores de usuarios</item>
+        <item>Agregar botón➕: Accesos directos a scripts/apps/python</item>
+        <item>Mettre à jour⏫: installer des mises à jour sans perte de données ni réinstaller le système. Corrige les erreurs</item>
+        <item>"Supprimer❌Wine🍷: retirer complètement Wine/Windows de l'app⚠️pour libérer de l'espace"</item>
+    </string-array>
+</resources>

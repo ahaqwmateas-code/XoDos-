@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="core_options">
+        <item>1 نواة</item>
+        <item>2 نواتين</item>
+        <item>3 نوى</item>
+        <item>4 نوى</item>
+        <item>5 نوى</item>
+        <item>6 نوى</item>
+        <item>7 نوى</item>
+        <item>8 نوى</item>
+    </string-array>
+    <string-array name="tutorial_steps">
+        <item>XoDos🖥️: سطح مكتب Linux سريع يعمل على Android</item>
+        <item>Proot🐧: تشغيل توزيعات Linux كاملة بحقوق root</item>
+        <item>Kali🐉Linux: نظام كالي لينيكس معا أكثر من 100 أداة للمهندسين والطلاب</item>
+        <item>Wine🍷Glibc: محاكي Windows لمعظم أجهزة Android (إن لم يكن Snapdragon استخدم VirGl)</item>
+        <item>Wine🍷Bionic: محاكي Windows مع دعم السواقات الأصلية (إن لم يكن Snapdragon استخدم wrapper)</item>
+        <item>حذف 🗑️ المثبت واين🍷: هنا يمكنك إزالة/حذف حاوية Wine أو البادئة المثبتة لإصلاح مشاكل نظام Windows وتثبيت Wine جديد</item>
+        <item>مدير الملفات📁: تصفح وإدارة الملفات واستخراجها وتثبيتها واستعادتها والمزيد</item>
+        <item>Termux:widgets📃: إنشاء اختصارات مباشرة إلى الصفحة الرئيسية لأندرويد لتشغيل البرامج النصية/التطبيقات بسهولة وسرعة أكبر</item>
+        <item>Termux:widgets: make shortcuts directly to android launcher to make running scripts easier</item>
+        <item>الإعدادات⚙️: تكوين Wine/DXVK/Box والسواقات</item>
+        <item>دردشة AI🤖: ذكاء اصطناعي محلي خاص يدعم DeepSeek وLlama وأكثر</item>
+        <item>استعادة♻️: تثبيت تحديثات XoDos وأنظمة أخرى مثل Kali/Proot</item>
+        <item>نسخ احتياطي📥: نسخة كاملة للنظام للاستعادة/النقل</item>
+        <item>إعدادات سريعة🪄: تسهّل إعداد Wine/Windows للمبتدئين</item>
+        <item>الاختصارات🎮: يساعد في تكوين تطبيقات وألعاب Wine/Windows وفتحها مباشرة</item>
+        <item>تبديل👥: التبديل بين حاويات المستخدمين المختلفة</item>
+        <item>إضافة زر➕: إنشاء اختصارات للسكريبتات/التطبيقات/python</item>
+        <item>تحديث⏫: تثبيت التحديثات دون فقدان البيانات أو إعادة تثبيت النظام. يساعد على إصلاح الأخطاء</item>
+        <item>حذف❌Wine🍷: إزالة Wine/Windows نهائياً من التطبيق⚠️لتحرير مساحة</item>
+    </string-array>
+</resources>
