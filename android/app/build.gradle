@@ -1,0 +1,44 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    ndkVersion = "27.0.12077973"
+    namespace "com.example.xodos"
+    // Updated to 36 as requested by your plugins
+    compileSdk 36
+    
+    // Updated to 27 to satisfy the audioplayers/connectivity plugins
+    ndkVersion "28.2.13676358"
+
+    defaultConfig {
+        applicationId "com.example.xodos"
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+
+        externalNativeBuild {
+            cmake {
+                // This is the "magic" line to prevent CMake from testing the compiler
+                arguments "-DCMAKE_TRY_COMPILE_TARGET_TYPE=STATIC_LIBRARY", "-DANDROID_STL=none"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
