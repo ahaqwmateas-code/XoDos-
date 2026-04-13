@@ -5,13 +5,9 @@ plugins {
 }
 
 android {
-    ndkVersion = "27.0.12077973"
+    ndkVersion = "28.2.13676358"
     namespace "com.example.xodos"
-    // Updated to 36 as requested by your plugins
     compileSdk 36
-    
-    // Updated to 27 to satisfy the audioplayers/connectivity plugins
-    ndkVersion "28.2.13676358"
 
     defaultConfig {
         applicationId "com.example.xodos"
@@ -22,10 +18,18 @@ android {
 
         externalNativeBuild {
             cmake {
-                // This is the "magic" line to prevent CMake from testing the compiler
                 arguments "-DCMAKE_TRY_COMPILE_TARGET_TYPE=STATIC_LIBRARY", "-DANDROID_STL=none"
             }
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
     }
 
     buildTypes {
@@ -42,3 +46,4 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
 }
+
