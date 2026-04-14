@@ -1,2 +1,0 @@
-#!/bin/bash
-java -jar ~/storage/XoDos_apktool/apktool.jar "$@"

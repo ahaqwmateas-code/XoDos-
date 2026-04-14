@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.termux.x11.extrakeys.TermuxExtraKeysView android:orientation="horizontal" android:id="@id/display_terminal_toolbar_extra_keys" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" style="?android:buttonBarStyle"
-  xmlns:android="http://schemas.android.com/apk/res/android" />
